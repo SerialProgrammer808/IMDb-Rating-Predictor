@@ -1,6 +1,6 @@
 # IMDB RATING PREDICTOR
 ## BACKGROUND
-As a person studying computer science and someone with a big sense of curiosity, machine learning has always interested me. In an effort to learn more of the basics of `machine learning`, learn the libraries and technologies involved, and showcase my profficency with `Python`, I created this program which uses a random forrest regressor and an IMDb meta dataset to predict the rating of a show or movie based on its duration, number of votes, and nominations
+As a person studying computer science and someone with a big sense of curiosity, machine learning has always interested me. In an effort to learn more of the basics of `machine learning`, learn the libraries and technologies involved, and showcase my profficency with `Python`, I created this program which uses a random forest regressor and an IMDb meta dataset to predict the rating of a show or movie based on its duration, number of votes, and nominations
 
 ## OVERVIEW
 This project utilizes the following:
@@ -44,16 +44,16 @@ The data is then parsed into 80% training data and 20% testing data. This split 
 train = media[media["Year"] < 2015].copy()
 test = media[media["Year"] >= 2015].copy()
 ```
-We then initalize the random forrest model from Sci-kit Learn, train it, and test it.
+We then initalize the random forest model from Sci-kit Learn, train it, and test it.
 ```python
-#initialize random forrest regression model and dependent/independent variables
+#initialize random forest regression model and dependent/independent variables
 reg = RandomForestRegressor(n_estimators=100, random_state=42)
 predictors = ["Duration", "Votes", "nominations"]
 target = "Rating"
 
-#train random forrest regression model by fitting trend between predictors and target
+#train random forest regression model by fitting trend between predictors and target
 reg.fit(train[predictors], train["Rating"])
-#test random forrest regression by predicting the medals on test when only given "athletes" and "prev_medals"
+#test random forest regression by predicting the medals on test when only given "athletes" and "prev_medals"
 predictions = reg.predict(test[predictors])
 
 #set the "predictions" for data 2015 and on equal to our predictions

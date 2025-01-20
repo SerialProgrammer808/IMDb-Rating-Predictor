@@ -126,7 +126,6 @@ def vote_converter(vote):
 
 ## CONCLUSION
 After running this program on the dataset I retrieved, I was returned a test data set with an average error of +-0.85 rating points, and a graph showing actual vs predicted ratings
-
-![alt text](Figure_1.png)
+![Figure_1](https://github.com/user-attachments/assets/605f3568-1660-4b9d-acef-72267940f7d2)
 
 Though this program and was not of the highest performance, it a great way to learn and solidify my knowledge of python, machine learning, Sci-kit Learn, and the technologies/libraries involved in the process.

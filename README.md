@@ -1,6 +1,6 @@
 # IMDB RATING PREDICTOR
 ## BACKGROUND
-As a person studying computer science and someone with a big sense of curiosity, machine learning has always interested me. In an effort to learn more of the basics of `machine learning`, learn the libraries and technologies involved, and showcase my profficency with `Python`, I created this program which uses a random forest regressor and an IMDb meta dataset to predict the rating of a show or movie based on its duration, number of votes, and nominations
+As a person studying computer science and someone with a big sense of curiosity, machine learning has always interested me. In an effort to learn more about the basics of `machine learning`, learn the libraries and technologies involved, and showcase my profficiency with `Python`, I created this program which uses a random forest regressor and an IMDb meta dataset to predict the rating of a show or movie based on its duration, number of rating votes, and nominations
 
 ## OVERVIEW
 This project utilizes the following:
